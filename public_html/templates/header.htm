@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+
+	*{
+  		margin: 0;
+  		-webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+-webkit-tap-highlight-color: transparent;  // i.e. Nexus5/Chrome and Kindle Fire HD 7''
+
+	}
+	
+html, body {
+  height: 100%;
+  background-color: #f0f0f0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+-webkit-tap-highlight-color: transparent; 
+
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -28px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 24px; 
+  padding:2px;
+}
+.site-footer {
+  background: black;
+  color:white;
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  font-size: 20px;
+  max-height: 999999px;
+  border-top: 4px solid orange;
+  border-bottom: 4px solid orange;
+
+}
+.site-header{
+	font-family: 'Play', sans-serif;
+	font-size: 90px;
+	padding-left:10%;
+	padding-top:10px;
+	text-align:left;
+	font-weight: bold;
+	background-color: #202020;
+	color: #ffffff;
+	border-bottom: solid orange 4px;
+	border-top: solid orange 4px;
+}
+/*UNSELECTABLE STUFF*/
+.site-header, .site-footer, ul{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; /* Chrome/Safari */ 
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;       
+}
+
+
+.content{
+	padding-top:10px;
+	padding-left:10%;
+	padding-right:10%;
+}
+li{
+	display:inline;
+}
+a{
+	text-decoration: none;
+}
+.navWrap{
+	position: relative;
+	color: white;
+}
+ul{
+	position:relative;
+	padding-right:10%;
+	padding-left:10%;
+	top:-24px;
+	
+	text-align: right;
+   margin-left:auto;
+   margin-right:auto;
+   width:80%;
+   cursor: pointer;
+   font-family: 'Play', sans-serif;
+   font-size: 13px;
+
+
+    
+}	
+li{
+	color: white;
+	padding-left:10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	//margin:-3px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .site-header {
+        text-align: center;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right:10px;
+    }
+    ul{
+    	text-align: center;
+    	//padding-left:10px;
+    	//padding-right: 10px;
+    }
+    .content{
+	//padding-top:10px;
+	padding-left:5%;
+	padding-right:5%;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .site-header {
+       font-size: 80px;
+    }
+    
+    
+}
+@media screen and (max-width: 500px) {
+    .site-header {
+       font-size: 70px;
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
+    .site-header {
+       font-size: 60px;
+    }  
+}
+@media screen and (max-width: 400px) {
+    .site-header {
+       font-size: 50px;
+    }
+    
+}
+
+
+.nav0{
+	border-top: solid red 4px;
+	border-bottom: solid orange 4px;
+	
+
+
+}
+
+.nav0:hover{
+	background-color: red;
+	border-bottom: solid red 4px;
+}
+
+.nav1{
+	border-top: solid green 4px;
+	border-bottom: solid orange 4px;
+}
+.nav1:hover{
+	background-color: green;
+	border-bottom: solid green 4px;
+}
+.nav2{
+	border-top: solid blue 4px;
+	border-bottom: solid orange 4px;
+
+}
+.nav2:hover{
+	background-color: blue;
+	border-bottom: solid blue 4px;
+}
+.nav3{
+	border-top: solid orange 4px;
+	border-bottom: solid orange 4px;
+}
+.nav3:hover{
+	background-color:orange;
+	border-bottom: solid orange 4px;
+}
+.nav4{
+	border-top: solid purple 4px;
+	border-bottom: solid orange 4px;
+}
+.nav4:hover{
+	background-color: purple;
+	border-bottom: solid purple 4px;
+}
+</style>
+</head>
+	<body>
+	<div class="page-wrap">
+	<div class="header-wrap">
+	<div class=site-header unselectable="on">foolsCode.io</div>
+	<div class="navWrap">
+		<ul>
+			<a href="index.shtml"><li class="nav0">home</li></a><!--
+			--><a href="blog.shtml"><li class="nav1">blog</li></a><!--
+  			--><li class="nav2">linux</li><!--
+  			--><li class="nav4">contact</li>
+		</ul>
+	</div>
+	</div>
+  	<div class="content">
+    

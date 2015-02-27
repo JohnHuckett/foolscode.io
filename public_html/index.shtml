@@ -1,0 +1,3 @@
+<!--#include virtual="/templates/header.htm" -->
+<h1>CONTENT!</h1>	
+<!--#include virtual="/templates/footer.htm" -->

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+
+	*{
+  		margin: 0;
+  		-webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+-webkit-tap-highlight-color: transparent;  // i.e. Nexus5/Chrome and Kindle Fire HD 7''
+
+	}
+	
+html, body {
+  height: 100%;
+  background-color: #f0f0f0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+-webkit-tap-highlight-color: transparent; 
+
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -28px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 24px; 
+  padding:2px;
+}
+.site-footer {
+  background: black;
+  color:white;
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  font-size: 20px;
+  max-height: 999999px;
+  border-top: 4px solid orange;
+  border-bottom: 4px solid orange;
+
+}
+.site-header{
+	font-family: 'Play', sans-serif;
+	font-size: 90px;
+	padding-left:10%;
+	padding-top:10px;
+	text-align:left;
+	font-weight: bold;
+	background-color: #202020;
+	color: #ffffff;
+	border-bottom: solid orange 4px;
+	border-top: solid orange 4px;
+}
+/*UNSELECTABLE STUFF*/
+.site-header, .site-footer, ul{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; /* Chrome/Safari */ 
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;       
+}
+
+
+.content{
+	padding-top:10px;
+	padding-left:10%;
+	padding-right:10%;
+}
+li{
+	display:inline;
+	
+}
+.navWrap{
+	position: relative;
+	color: white;
+}
+ul{
+	position:relative;
+	padding-right:10%;
+	padding-left:10%;
+	top:-24px;
+	
+	text-align: right;
+   margin-left:auto;
+   margin-right:auto;
+   width:80%;
+   cursor: pointer;
+   font-family: 'Play', sans-serif;
+   font-size: 13px;
+
+
+    
+}	
+li{
+	color: white;
+	padding-left:10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	//margin:-3px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .site-header {
+        text-align: center;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right:10px;
+    }
+    ul{
+    	text-align: center;
+    	//padding-left:10px;
+    	//padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .site-header {
+       font-size: 80px;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .site-header {
+       font-size: 70px;
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
+    .site-header {
+       font-size: 60px;
+    }  
+}
+@media screen and (max-width: 400px) {
+    .site-header {
+       font-size: 50px;
+    }
+    
+}
+
+
+.nav0{
+	border-top: solid red 4px;
+	border-bottom: solid orange 4px;
+	
+
+
+}
+
+.nav0:hover{
+	background-color: red;
+	border-bottom: solid red 4px;
+}
+
+.nav1{
+	border-top: solid green 4px;
+	border-bottom: solid orange 4px;
+}
+.nav1:hover{
+	background-color: green;
+	border-bottom: solid green 4px;
+}
+.nav2{
+	border-top: solid blue 4px;
+	border-bottom: solid orange 4px;
+
+}
+.nav2:hover{
+	background-color: blue;
+	border-bottom: solid blue 4px;
+}
+.nav3{
+	border-top: solid orange 4px;
+	border-bottom: solid orange 4px;
+}
+.nav3:hover{
+	background-color:orange;
+	border-bottom: solid orange 4px;
+}
+.nav4{
+	border-top: solid purple 4px;
+	border-bottom: solid orange 4px;
+}
+.nav4:hover{
+	background-color: purple;
+	border-bottom: solid purple 4px;
+}
+
+
+
+</style>
+</head>
+	<body>
+	<div class="page-wrap">
+	<div class="header-wrap">
+	<div class=site-header unselectable="on">foolsCode.io</div>
+	<div class="navWrap">
+		<ul>
+			<li class="nav0">home</li><!--
+			--><li class="nav1">blog</li><!--
+  			--><li class="nav2">linux</li><!--
+  			--><li class="nav4">contact</li>
+		</ul>
+	</div>
+	</div>
+  	<div class="content">
+    <h1>Here is Some Stupid Content!</h1>
+    <p>
+    Lorem ipsum dolor sit amet, iudico fabulas argumentum id eum. Te vix graeco audiam numquam, sea semper indoctum cu. Pertinax conceptam ex per. Cu veri mucius duo, id qui dicant labore. Ne veritus rationibus deseruisse mea, ad harum pertinacia necessitatibus usu.
+
+ Te qui sint agam salutandi, sonet iisque id qui. An magna mundi conclusionemque has. No minimum splendide vis, sea ocurreret conceptam et, vel vitae delenit feugait id. Cu erat causae vim, eam aeterno vivendum salutatus ea. Cu rebum alterum mnesarchum has. Porro aperiam per at, pri ei sonet accusamus.
+
+ Te utinam meliore vocibus has, esse iudicabit pri eu. Dolorum utroque ut ius. Per mundi persequeris cu, in eos mundi salutatus. Nam id putent minimum atomorum. Eum dolor assueverit scribentur no.
+
+ Esse nemore nusquam at vel. Ne brute singulis cum. Congue noluisse deterruisset ex mel, duo summo mollis convenire no. Errem nobis nusquam nam cu, vim ei illum inani, per et simul alterum reprimique.
+
+ Dicant mediocritatem at eum, movet cotidieque has id, sed cu suas nulla suavitate. Summo vidisse euripidis ei mei. Tota doming duo cu, qui verterem omittantur ut. Nusquam placerat in cum. Quo et aliquid recusabo, nec in diceret docendi aliquando.
+
+ Ea facilis posidonium est, has ei oratio recusabo. Id nusquam luptatum duo, pri et probo sensibus. Est ut veri convenire mediocrem, an mucius facilisis ius. Ei sea purto ocurreret. Pri cu hinc graece mnesarchum.
+
+ Sumo augue intellegat an eum, cum minim utroque concludaturque id, tollit ubique inimicus ad eum. At cum omnis malorum iudicabit, te munere accusata nec. At mel error torquatos. His no qualisque scripserit reformidans. Quis labitur similique at per, facilis perfecto accusamus ad duo.
+
+ Numquam nominavi delicatissimi te mei, eum id offendit voluptaria. Mea in aliquid aliquam iracundia. Eos ad graece equidem erroribus, no erat salutandi qui. In mea nemore iuvaret, pri clita omittam evertitur ad.
+
+ Prodesset scribentur ne nam. No quem assum his, per viris detraxit molestiae ut. Mel cu timeam impetus, ponderum constituam no nec. An pri tollit vidisse, eu augue nusquam urbanitas nec. Illum clita voluptatum mea ex, ius ad illud feugait nusquam.
+
+ Diam aliquam has ne, vis solum consequat ut. Possim similique et pri. Cibo dolorum inermis sit at, vix feugait mentitum te. Sit an suas omnium quaerendum, munere appetere explicari has ea, utamur philosophia vim cu. Est ubique eripuit sensibus no, ut labore iisque pro. Harum admodum liberavisse te per, mea ex meliore posidonium. Cetero aliquip signiferumque at vix, cum eu dolorem recusabo.
+
+ Sit legimus torquatos te. Ius meis graece eu. Vocibus accumsan percipit ne his, ei est reque consetetur, cum natum delenit voluptatibus te. Has ad delectus referrentur, eam ea recusabo quaerendum, pro et oportere voluptaria. Eos ei qualisque periculis, duo probo posse pertinacia at. His animal partiendo id.
+
+ Ea duo stet persequeris, ad sententiae liberavisse quo. Sed ad offendit adversarium repudiandae, dissentiet neglegentur et vim. Consulatu ullamcorper ea vel, per nibh quando corrumpit ad. Per suas altera accusamus cu, eam suas partem et. Doctus moderatius mea id.
+
+ At pri falli praesent, eam ad ullum scripta assueverit. Sed eu facer viris. Quo omittam abhorreant at. Vel eu quaestio partiendo cotidieque. Mel graeci ponderum reprehendunt ex, per at utamur assueverit honestatis. Cum in sint nihil dolorem, cum vocent aliquam in. Eos argumentum cotidieque no, sed alterum habemus menandri no, no vix movet essent.
+
+ Duo id adhuc phaedrum scriptorem. Molestie persecuti pro te. An sit posse labitur reformidans. Integre apeirian at his, ne homero utroque habemus sit, his appetere principes conceptam te. Summo aliquip lobortis cu pri, eos aeque prompta molestiae ea, duo at praesent tractatos iudicabit.
+
+ Tale commune concludaturque mel ei. Mel mollis propriae fabellas ne. Ei eos dolor facilisi, pro semper postulant intellegam an. Nam an gloriatur conclusionemque, ius movet putent invenire in. Et cetero tibique has, te cum mazim voluptatibus. Ius omnes appareat ut, vis cu virtute consequat, eam ut meliore appellantur. Melius accumsan ei sed.
+
+ In est vide maiestatis. Mazim volutpat praesent mea ea, mei posse adipisci reprimique cu. Duo in pertinax molestiae urbanitas, dolor graeci vel cu. Mel scripta labores an. Molestie tacimates argumentum ex usu, noluisse scribentur ut vix. Ludus pericula et ius.
+
+ Mei augue iusto an. Te mundi dolorum vulputate pro. Lorem tollit vivendo mea at, ei nibh debet denique eam. Te ipsum melius praesent has.
+
+ Ea sea facilisis liberavisse. Labores veritus scriptorem in vim. Cum cu essent aeterno. Mei novum definitionem et, sumo assum nam ne.
+
+ Te nobis consectetuer ius, congue animal atomorum vix ex, mea nominati ocurreret signiferumque an. Pri meliore suavitate te, cibo oportere signiferumque an vel. Veniam homero latine has an, nam bonorum epicuri in, ea mea dico veri assum. Paulo vocent molestie no ius, eos ei erat probatus patrioque, unum ubique consulatu an est.
+
+ Quem falli vulputate et his, et autem legere sit. Sed omnis elaboraret scriptorem ea. Id sint equidem pri, eros duis altera te ius, virtute vituperata argumentum te ius. Ius ea oratio luptatum, nam no habeo fierent constituto. Id eos possit ornatus voluptatum, ex agam essent gubergren mei.
+
+ An sit consetetur vituperata. Vis senserit theophrastus an. Ei cum enim delicatissimi, quando mentitum in mel, eu natum constituam vix. Purto doctus salutatus in vel, ad agam tantas cum. Mei in altera oporteat voluptatum. Pro cu fastidii placerat.
+
+ Vel discere omittam dissentiunt no, est dicam essent efficiendi ea, eam vocent appetere interpretaris ex. Has clita ignota accusam no, cum option erroribus interesset in. Eu nam sumo iuvaret inermis, vis errem dolorum singulis id. Putent nemore pri at.
+
+ Et duo eius justo liberavisse. Sea ne facilis posidonium, tota graeci et cum. Recteque intellegat mediocritatem eos in, eu quo eruditi abhorreant. In vis sensibus disputando, cu eam vocent oportere, mea et meliore persequeris. Pri iudico moderatius appellantur cu.
+
+ Viderer ocurreret referrentur eos eu, solum clita aeterno qui eu. Sed te putant impetus, te quando urbanitas quo. Ea est quis clita blandit, sed dico possit no. Agam vide delectus vis ut, est an case solet semper. Enim consectetuer at sea.
+
+ Est cu minimum albucius. Id ludus possit comprehensam vel, stet eruditi te eos, ex mel aliquid quaerendum. Tale sanctus consetetur.
+    </p>
+    <br>
+      </div>
+	</div>
+
+<footer class="site-footer">&copy; John Huckett 2015</footer>
+	</body>
+</html>
+
