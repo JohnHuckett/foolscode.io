@@ -1,0 +1,87 @@
+<html>
+<head>
+	<style type="text/css">
+		pre, div, iframe , h1 , h2, input{
+			-webkit-touch-callout: none;
+    		-webkit-user-select: none;
+    		-khtml-user-select: none;
+    		-moz-user-select: none;
+    		-ms-user-select: none;
+    		user-select: none;
+		}
+		iframe{
+			width:90%;
+			overflow: hidden;
+		}
+		button{
+			width:10% ;
+			display:block;
+			float:right;
+		}
+		.code{
+			display:none;
+		}
+		.anotherWinButt{
+		}
+	</style>
+	<script type="text/javascript">
+	function viewCode(exampleNum){
+		var i = exampleNum;
+		var buttonState = document.getElementsByClassName('codeButton')[i].innerHTML;
+		//alert(buttonState);
+		if(buttonState == 'code'){
+			document.getElementsByClassName('code')[i].style.display = "initial";
+			document.getElementsByClassName('codeButton')[i].innerHTML = "hide";
+		}
+		if(buttonState == 'hide'){
+			document.getElementsByClassName('code')[i].style.display = "none";
+			document.getElementsByClassName('codeButton')[i].innerHTML = "code";
+		}
+	}
+	function openInAnotherWindow(exampleNum){
+		window.open("example"+exampleNum+".html");
+	}
+	</script>
+	</head>
+	<body>
+	<h1>Range</h1>
+	<h2>Examples</h2>
+	<p>
+	<iframe src="example0.html" frameborder="0" scrolling="no" height="32"></iframe>
+	<button class="codeButton" onclick="viewCode('0')">code</button>
+	<button class="anotherWinButt" onclick="openInAnotherWindow('0')">open</button><br>
+	<pre class="code" id="language-html">
+Blah Blah Blah
+asklkadsn
+sadsad
+asddsa
+</pre>
+	</p>
+	<p>
+	<iframe src="rangeExample2.html" frameborder="0" scrolling="no"width="100%" height="83"></iframe><button class="codeButton" onclick="viewCode('1')">code</button>
+<pre class="code" id="language-html">
+Blah Blah Blah
+asklkadsn
+sadsad
+asddsa
+</pre>
+	</p>
+	<iframe src="rangeExample3.html" frameborder="0" scrolling="no"width="100%" height="83"></iframe><button class="codeButton" onclick="viewCode('2')">code</button>
+<pre class="code" id="language-html">
+Blah Blah Blah
+asklkadsn
+sadsad
+asddsa
+	</pre>
+
+	<iframe src="rangeExample4.html" frameborder="0" scrolling="no"width="100%" height="158"></iframe><button class="codeButton" onclick="viewCode('3')">code</button>
+<pre class="code" id="language-html">
+Blah Blah Blah
+asklkadsn
+sadsad
+asddsa
+	</pre>
+	
+
+	</body>
+</html>

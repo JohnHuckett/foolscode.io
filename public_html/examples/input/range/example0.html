@@ -1,0 +1,11 @@
+<head>
+	<script>
+		function outputUpdate(level) {
+			document.getElementById('level').value = level;
+		}
+	</script>	
+</head>
+<body>
+	<input type="range" min="0" max="255" value="1" id="fader" step="1" oninput="outputUpdate(value)">
+	<output for="fader" id="level">0</output>
+</body>

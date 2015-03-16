@@ -1,0 +1,20 @@
+<html>
+<head>
+	<style type="text/css">
+		#shape{
+			height:50px;
+			background-color: red;
+			position: absolute;
+		}
+	</style>
+	<script>
+		function outputUpdate(level) {
+			document.getElementById('shape').style.width = level+'%';
+		}
+	</script>
+</head>
+<body>
+	<input type="range" min="0" max="98" value="0" id="redFader" step="1" oninput="outputUpdate(value)">
+	<div id="shape"></div>
+</body>
+</html>

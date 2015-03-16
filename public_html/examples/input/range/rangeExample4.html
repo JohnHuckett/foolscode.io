@@ -1,0 +1,97 @@
+<html>
+<head>
+	<style type="text/css">
+		pre, div, iframe{
+			-webkit-touch-callout: none;
+    		-webkit-user-select: none;
+    		-khtml-user-select: none;
+    		-moz-user-select: none;
+    		-ms-user-select: none;
+    		user-select: none;
+		}
+		#poo{
+			background-color: #000000;
+			border-radius: 25px;
+			padding: 20px;
+		}
+		#redLevel{
+			height:100px;
+		}
+		#redLevel, #greenLevel, #blueLevel, label{
+			background-color: #ffffff;
+			font-family: monospace;
+			padding: 4px;
+			border-radius: 5px;	
+		}
+		#container{
+			border-radius: 5px;
+			padding: 10px;
+			background-color: white;
+		}
+	</style>
+	<script>
+		var red;
+		var green;
+		var blue;
+
+	function outputUpdateRed(redLevel) {
+		if(redLevel >= 16){
+			red = dec2Hex(redLevel);
+		}
+		if(redLevel <= 15){
+			red = '0' + dec2Hex(redLevel);
+		}
+		document.getElementById('redLevel').value = red;
+		document.getElementById('poo').style.backgroundColor = '#'+red + green + blue;
+	}
+
+	function outputUpdateGreen(greenLevel) {
+		if(greenLevel >= 16){
+			green = dec2Hex(greenLevel);
+		}
+		if(greenLevel <= 15){
+			green = '0' + dec2Hex(greenLevel);
+		}
+		document.getElementById('greenLevel').value = green;
+		document.getElementById('poo').style.backgroundColor = '#'+red + green + blue;
+	}
+
+	function outputUpdateBlue(blueLevel) {
+		if(blueLevel >= 16){
+			blue = dec2Hex(blueLevel);
+		}
+		if(blueLevel <= 15){
+			blue = '0' + dec2Hex(blueLevel);
+		}
+		document.getElementById('blueLevel').value = blue;
+		document.getElementById('poo').style.backgroundColor = '#'+red + green + blue;
+	}
+
+	function dec2Hex(x){
+    	return (x >>> 0).toString(16);
+	}
+
+</script>
+</head>
+<body>
+	<div id="poo">
+	<div id="container">
+	<div id="faders">
+	<label for=redFader>R</label>
+	<input type="range" min="0" max="255" value="1" id="redFader" step="1" oninput="outputUpdateRed(value)">
+	<output for="redFader" id="redLevel">00</output><br>
+	</div>
+	<div>
+	<label for=greenFader>G</label>
+	<input type="range" min="0" max="255" value="1" id="greenFader" step="1" oninput="outputUpdateGreen(value)">
+	<output for="greenFader" id="greenLevel">00</output><br>
+	</div>
+	<div>
+	<label for=blueFader>B</label>
+	<input type="range" min="0" max="255" value="1" id="blueFader" step="1" oninput="outputUpdateBlue(value)">
+	<output for="blueFader" id="blueLevel">00</output><br>	
+	</div>
+	</div>
+	</div>
+</body>
+</html>
